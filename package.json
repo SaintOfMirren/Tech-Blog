@@ -1,0 +1,21 @@
+{
+    "name": "tech-blog",
+    "version": "1.0.0",
+    "description": "Just a quick blog website for techies",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "Drew",
+    "license": "MIT",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "connect-session-sequelize": "^7.0.4",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "express-handlebars": "^5.3.3",
+      "express-session": "^1.17.2",
+      "mysql2": "^2.3.0",
+      "sequelize": "^6.10.0"
+    }
+  }
