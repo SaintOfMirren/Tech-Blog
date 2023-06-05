@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tech-Blog - Articles</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/users">Users</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{#if articles.length}}
+      <h2>Articles</h2>
+      <ul class="article-list">
+        {{#each articles}}
+          <li>
+            <h3>{{title}}</h3>
+            <p class="author">By {{User.name}}</p>
+            <p>{{content}}</p>
+            <a href="/articles/{{id}}">Read more</a>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No articles found.</p>
+    {{/if}}
+  </main>
+
+</body>
+</html>
